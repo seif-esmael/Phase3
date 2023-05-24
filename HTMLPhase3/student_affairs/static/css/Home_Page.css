@@ -1,0 +1,85 @@
+/* add student section */
+
+.add-student  {
+    padding: 20px;
+
+    padding-top: 56px;
+
+}
+.add-student .container , .update-student .container , .search-activity .container {
+  
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    height: 550px;
+
+
+}
+
+
+.add-text {
+    padding: 20px;
+    font-size:  16px;
+   width: 45%;
+    height: 90%;
+    position: relative;
+
+}
+.add-text h3{
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin-top: 20px ;
+
+
+}
+.add-text p{
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+
+}
+.add-text .btn {
+    right: 110px;
+    bottom: 75px;
+}
+.add-img {
+    align-items: center;
+   width: 45%;
+    height: 90%;
+
+}
+
+
+.add-img img  {
+    width: 80%;
+    height: auto;
+ 
+ }
+
+ /* ----------------------------------------- */
+ .update-student {
+    padding: 20px;
+    margin-top: 0px;
+    padding-top: 56px;
+
+}
+
+
+
+.update-student .add-img{
+    position: relative;
+}
+.update-student .add-img img {
+    position: absolute;
+    right: 40px;
+    top: 30px;
+}
+
+.search-activity{
+    padding: 20px;
+    margin-top: 0;
+    padding-top: 56px;
+}

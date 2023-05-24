@@ -1,0 +1,61 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/base.css' %}">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Slab&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- nav bar  -->
+    <div class="header">
+        <div class="container">
+            <div class="logo">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <div class="name-page">
+                    HOME
+                </div>
+            </div>
+
+            <div class="links">
+                <ul>
+                    <li><a class="here" href="{% url 'home_page' %}">Home</a></li>
+                    <li><a href="{% url 'sign_in' %}">Add Student</a></li>
+                    <li><a href="#update-student">Update Student</a></li>
+                    <li><a href="#search-activity">Search Activity</a></li>
+                    <li><a href="#All_Status">All Status</a></li>
+                    <li><a href="#Info">Info</a></li>
+                </ul>
+
+            </div>
+
+        </div>
+    </div>
+
+    {% block content %}
+    {% endblock content %}
+
+    <div class="clear" id="Info"></div>
+    <footer class="Info">
+        <div class="container">
+            <div class="logo">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <div class="name-page">
+                    student affairs
+                </div>
+                <br>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-square-twitter"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+            </div>
+        </div>
+    </footer>
+
+   
+</body>
+
+</html>
